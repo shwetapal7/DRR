@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRR Screen Redesign</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-heading">
+            <button onclick="addNewRow()" id="addNewButton">Add New</button>
+        </div>
+        <div class="table">
+            <div class="row heading">
+                <div class="cell">Action</div>
+                <div class="cell">ID</div>
+                <div class="cell">Start Date</div>
+                <div class="cell">End Date</div>
+                <div class="cell">Lead Count</div>
+                <div class="cell">Month, Year</div>
+                <div class="cell">Dates Excluded</div>
+                <div class="cell">Last Updated</div>
+                <div class="cell">Number of Days</div>
+                <div class="cell">Expected DRR</div>
+            </div>
+            <div class="row">
+                <div class="cell">New</div>
+                <div class="cell">11</div>
+                <div class="cell">
+                    <input type="date" id="start-date">
+                </div>
+                <div class="cell">
+                    <input type="date" id="end-date">
+                </div>
+                <div class="cell">
+                    <input type="number" id="lead-count">
+                </div>
+                <div class="cell" id="month-year"></div>
+                <div class="cell">
+                    <input type="text" id="excluded-dates">
+                </div>
+                <div class="cell" id="last-updated"></div>
+                <div class="cell" id="number-of-days"></div>
+                <div class="cell" id="expected-drr"></div>
+                <div class="cell"><button onclick="saveData()" id="save-button">Save</button></div>
+
+                <div class="cell"><button onclick="cancelUpdate()" id="cancel-button">Cancel</button></div>
+
+            </div>
+            <!-- Add more rows as needed -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

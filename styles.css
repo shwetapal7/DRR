@@ -1,0 +1,80 @@
+.container {
+    width: 92%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #f9f9f9; /* Light Gray */
+}
+
+.table {
+    display: table;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+.row {
+    display: table-row;
+}
+
+.heading {
+    background-color: #0a257c; /* Dark Blue */
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-heading button {
+    background-color: #0c6aa8; /* Slightly Lighter Shade of Blue */
+    padding: 10px;
+    border-radius: 5px;
+    width: 155px;
+    color: white;
+}
+
+.cell {
+    display: table-cell;
+    padding: 8px;
+    border: 1px solid #ddd; /* Light Gray */
+    text-align: center;
+    color: black;
+}
+
+#name {
+    width: 50px;
+}
+
+#dat {
+    width: 50px;
+}
+
+button{
+    background-color: #4CAF50; /* Green */
+    border-radius: 5px;
+    width: 60px;
+    padding: 10px;
+    color: white;
+}
+#cancel-button{
+    background-color: #FF0000; /* Red */
+    width: 60px;
+    padding: 10px;
+    color: white;
+}
+.cancel-button{
+    background-color: #FF0000; /* Red */
+    width: 60px;
+    padding: 10px;
+    color: white;
+}
+/* For mobile devices */
+@media (max-width: 767px) {
+    /* Add your responsive styles here */
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .cell {
+        padding: 5px;
+        font-size: 12px;
+    }
+    
+}
